@@ -1,34 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DNS Resolution Test</title>
-    <style>
-        body { font-family: monospace; padding: 20px; }
-        div { margin: 20px 0; }
-        .fail { color: red; }
-        .success { color: green; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Network Issue</title>
 </head>
 <body>
-    <div id="status">Testing...</div>
-    <img id="testImg" src="https://libraryapps.american.edu/resources/images/lib_logo.png" style="max-width: 300px; border: 1px solid #ccc; margin: 20px 0;">
-    <div id="result"></div>
+        Here's the HTML embedded image with full domain path from <strong>libraryapps.american.edu</strong>: <br><br>
 
-    <script>
-        const statusDiv = document.getElementById('status');
-        const resultDiv = document.getElementById('result');
-        const imgElement = document.getElementById('testImg');
-        
-        imgElement.onload = () => {
-            statusDiv.textContent = '✓ Image loaded successfully';
-            statusDiv.className = 'success';
-        };
-        
-        imgElement.onerror = () => {
-            statusDiv.textContent = '✗ Image failed to load';
-            statusDiv.className = 'fail';
-            resultDiv.textContent = 'If on-campus with local network disabled in Chrome: CLNR is blocking the local IP resolution';
-        };
-    </script>
+    <img src="https://libraryapps.american.edu/resources/images/lib_logo.png" width="50%">
+
+    <br><br>
+
+    Here's the HTML embedded image with full domain path from <strong>blogs.library.american.edu</strong> (a Windows
+    server): <br><br>
+
+    <img src="https://blogs.library.american.edu/images/lib_logo_control.png" width="50%">
+
+    <br><br>
+
+    Here's the HTML embedded image with full domain path from <strong>omeka.library.american.edu</strong> (a Linux
+    server): <br><br>
+
+    <img src="https://omeka.library.american.edu/images/lib_logo_control.png" width="50%">
 </body>
 </html>
